@@ -2,10 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') { 
-            steps {
-                sh(script: 'echo build')
-            }
         stage('Check Disk Space') {
             steps {
                 script {
